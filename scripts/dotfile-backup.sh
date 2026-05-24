@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cp ~/.bashrc ~/dotfiles/.bashrc
-cp ~/.bash_aliases /dotfiles/.bash_aliases
+cp ~/.bash_aliases ~/dotfiles/.bash_aliases
 cp -r ~/scripts ~/dotfiles/
 
 cd ~/dotfiles || exit
