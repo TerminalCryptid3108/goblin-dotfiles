@@ -104,7 +104,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -115,11 +114,39 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-neofetch --chafa "/media/seb/Ny diskenhed/ascii/sus.jpg"
-cowsay "Welcome back, Goober" | lolcat
+
+susjerma() {
+    roll=$(( RANDOM % 90 ))
+
+    if [ "$roll" -eq 0 ]; then
+        neofetch --chafa "/mnt/DemonContainment/ascii/sus.jpg"
+        echo ""
+        echo "If I chopped you up in a meat grinder" | pv -qL 12 |lolcat
+        sleep 1 
+        echo "Loot Get!— There’s Blood in the box, there’s blood inside this box." | pv -qL 12 | lolcat
+        sleep 1
+        echo "THE DREAMCAST FUCKING SUCKS" | pv -qL 12 | lolcat
+        sleep 1
+        cowsay "Hello Ladies and Gentlemen welcome to episode one of JermaCraft" | pv -qL 125 | lolcat
+        return 0
+    else
+        return 1
+    fi
+}
+
+if susjerma; then    :
+else
+    if [ "$USER" = "seb" ]; then
+        neofetch --chafa "/home/seb/Pictures/samuel hydecker.png"
+        cowsay "Welcome back, Cryptid" | lolcat
+    else
+        cowsay "FUCKING BEHAVE" | lolcat
+    fi
+fi
 
 newscript() {
     echo '#!/bin/bash' > ~/scripts/$1.sh
     chmod +x ~/scripts/$1.sh
     nano ~/scripts/$1.sh
 }
+
