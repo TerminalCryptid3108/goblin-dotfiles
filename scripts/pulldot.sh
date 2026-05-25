@@ -11,3 +11,4 @@ cp -r ~/dotfiles/sounds ~/
 cp -r ~/dotfiles/scripts ~/
 cp ~/dotfiles/.bashrc /
 cp ~/dotfiles/.bash_aliases ~/
+cp ~/dotfiles/neofetch/config.conf ~/.config/neofetch/
