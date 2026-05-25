@@ -137,7 +137,7 @@ susjerma() {
 if susjerma; then    :
 else
     if [ "$USER" = "seb" ]; then
-        neofetch --chafa "/home/seb/Pictures/samuel hydecker.png"
+        neofetch --chafa "/home/seb/Pictures/terminal-shenanigans/samuel hydecker.png"
         cowsay "Welcome back, Cryptid" | lolcat
     else
         cowsay "FUCKING BEHAVE" | lolcat
