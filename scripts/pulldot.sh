@@ -1,8 +1,13 @@
 #!/bin/bash
 cd ~/dotfiles || exit
 
-git pull -m "acquired new goblinry"
+if git pull, then
+echo ""
+echo "acquired new goblinry!"
+fi
 
-cp -r ~/dotfiles/images ~/Pictures/terminal-shenanigans
-cp -r ~/dotfiles/sounds ~/sounds
-cp -r ~/dotfiles/scripts ~/scripts
+cp -r ~/dotfiles/images ~/Pictures/
+cp -r ~/dotfiles/sounds ~/
+cp -r ~/dotfiles/scripts ~/
+cp ~/dotfiles/.bashrc /.bashrc
+cp ~/dotfiles/.bash_aliases ~/.bash_aliases
