@@ -4,7 +4,7 @@ cp ~/.bashrc ~/dotfiles/.bashrc
 cp ~/.bash_aliases ~/dotfiles/.bash_aliases
 cp -r ~/scripts ~/dotfiles/
 cp -r ~/sounds ~/dotfiles/
-cp -r ~/Pictures/terminal-shenanigan-images ~/dotfiles/
+cp -r ~/Pictures/ascii ~/dotfiles/
 
 cd ~/dotfiles || exit
 

@@ -119,7 +119,7 @@ susjerma() {
     roll=$(( RANDOM % 90 ))
 
     if [ "$roll" -eq 0 ]; then
-        neofetch --chafa "/mnt/DemonContainment/ascii/sus.jpg"
+        neofetch --chafa "/home/seb/Pictures/ascii/sus.jpg"
         echo ""
         echo "If I chopped you up in a meat grinder" | pv -qL 12 |lolcat
         sleep 1 
@@ -137,7 +137,7 @@ susjerma() {
 if susjerma; then    :
 else
     if [ "$USER" = "seb" ]; then
-        neofetch --chafa "/home/seb/Pictures/terminal-shenanigans/samuel hydecker.png"
+        neofetch --chafa "/home/seb/Pictures/ascii/samuel hydecker.png"
         cowsay "Welcome back, Cryptid" | lolcat
     else
         cowsay "FUCKING BEHAVE" | lolcat
