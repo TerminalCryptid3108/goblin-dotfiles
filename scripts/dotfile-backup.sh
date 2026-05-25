@@ -3,6 +3,8 @@
 cp ~/.bashrc ~/dotfiles/.bashrc
 cp ~/.bash_aliases ~/dotfiles/.bash_aliases
 cp -r ~/scripts ~/dotfiles/
+cp -r ~/sounds ~/dotfiles/
+cp -r ~/pictures/terminal-shenanigans ~/dotfiles/
 
 cd ~/dotfiles || exit
 
