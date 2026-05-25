@@ -150,3 +150,8 @@ newscript() {
     nano ~/scripts/$1.sh
 }
 
+terminaldeath() {
+    paplay ~/sounds/jerma-terminal-death.wav 2>/dev/null &
+}
+
+trap terminaldeath EXIT

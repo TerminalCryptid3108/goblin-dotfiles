@@ -21,4 +21,4 @@ alias aliasedit='nano ~/.bash_aliases'
 alias reload='source ~/.bashrc'
 alias exorcism='~/scripts/filesystem_exorcism.sh'
 alias backupdot='~/scripts/dotfile-backup.sh'
-
+alias steam='nohup steam >/dev/null 2>&1 &'
